@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>算命</title>
+</head>
+<body>
+    <h1>算命</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">算命</button>
+    </form>
+</body>
+</html>

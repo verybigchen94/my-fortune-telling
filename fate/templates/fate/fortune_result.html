@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>命理分析</title>
+</head>
+<body>
+    <h1>命理分析</h1>
+    <p>姓名：{{ name }}</p>
+    <div style="white-space: pre-wrap; word-wrap: break-word;">
+        {{ fortune.fortune_text }}
+    </div>
+    <a href="{% url 'fortune_telling' %}">重新算命</a>
+</body>
+</html>
